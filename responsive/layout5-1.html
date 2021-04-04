@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        #wrap {width: 100%; margin: 0 auto;}
+        header{width: 100%; height: 100px; background: #666;}
+        nav {float: left;width: 30%; height: 900px; background: #777;}
+        .con1 {float: left;width: 70%; height: 300px; background: #888;}
+        .con2 {float: left;width: 70%; height: 300px; background: #999;}
+        .con3 {float: left;width: 70%; height: 300px; background: #111;}
+        footer {clear: both;width: 100%; height: 100px; background: #222;}
+        
+        @media (max-width : 1220px) {
+            nav {height: 600px;}
+            .con1 {height: 300px;}
+            .con2 {height: 300px;}
+            .con3 {width: 100%;}
+            
+        }
+        
+        @media (max-width : 768px) {
+            
+            nav {width: 100%;}
+            .con1 {width: 50%;}
+            .con2 {width: 50%;} 
+        }
+        
+         @media (max-width : 480px) {
+            
+            
+             .con1 {width: 100%;}
+             .con2 {width: 100%;}
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+       <div id="wrap">
+        <header></header>
+        <nav></nav>
+        <div class="con1"></div>
+        <div class="con2"></div>
+        <div class="con3"></div>
+        <footer></footer>
+        
+    </div>
+</body>
+</html>
